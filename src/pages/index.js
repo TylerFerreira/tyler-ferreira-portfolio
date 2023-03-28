@@ -48,8 +48,8 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-fuchsia-700 font-medium md:text-6xl dark:text-fuchsia-500 name'>TYLER FERREIRA</h2>
             {darkMode ? <span className='darkTitle text-2xl md:text-3xl dark:text-white'>Software Developer</span> : <span className='lightTitle text-2xl md:text-3xl dark:text-white'>Software Developer</span>}
-            <p className='text-md py-5 text-gray-800 max-w-xl mx-auto md:text-xl dark:text-slate-200'>
-              Full-Stack Developer designing and developing web applications.
+            <p className='text-md py-5 text-gray-600 max-w-xl italic mx-auto md:text-xl dark:text-slate-300'>
+              “Simplicity is the ultimate sophistication.” <br/>- Leonardo da Vinci
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-slate-400'>
