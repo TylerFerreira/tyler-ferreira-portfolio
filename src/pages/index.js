@@ -2,9 +2,11 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { useState } from 'react';
+import Image from 'next/image';
+import selfImage from '../images/myselfRemoved.png';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -16,15 +18,15 @@ export default function Home() {
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between sticky top-0'>
+          <nav className='py-10 mb-3 flex justify-between sticky top-0'>
             <h1 className='text-xl dark:text-white font-edu'>DEVELOPED BY TYLER</h1>
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white'/></li>
-              <li><a href="#" className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>Resume</a></li>
+              <li><a href="#" className='bg-gradient-to-r from-fuchsia-700 to-purple-700 text-white px-4 py-2 rounded-md ml-8 shadow-lg dark:shadow-fuchsia-900'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl '>TYLER FERREIRA</h2>
+            <h2 className='text-5xl py-2 text-fuchsia-700 font-medium md:text-6xl dark:text-fuchsia-500'>TYLER FERREIRA</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer</h3>
             <p className='text-md py-5 text-gray-800 max-w-xl mx-auto md:text-xl dark:text-slate-200'>
               Full-Stack Developer designing and developing web applications.
@@ -35,8 +37,8 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/tyler-ferreira" target='_blank'><AiFillLinkedin/></a>
             <a href="https://github.com/TylerFerreira" target='_blank'><AiFillGithub/></a>
           </div>
-          <div className='relative mx-auto text-center bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 md:h-96 md:w-96'>
-           <p>IMAGE HERE</p>
+          <div className='relative mx-auto text-center bg-gradient-to-b from-fuchsia-700 rounded-full w-80 h-80 mt-20 overflow-hidden shadow-lg dark:shadow-fuchsia-900 md:h-96 md:w-96'>
+           <Image src={selfImage} layout='fill' objectFit='cover'></Image>
           </div>
           
         </section>
@@ -53,7 +55,7 @@ export default function Home() {
               CARD IMAGE HERE
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className='py-2'>Creating elegant designs suited for your needs following core design theory.</p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1'>Photoshop</p>
               <p className='text-gray-800 py-1'>Illustrator</p>
               <p className='text-gray-800 py-1'>Figma</p>
@@ -63,7 +65,7 @@ export default function Home() {
               CARD IMAGE HERE
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className='py-2'>Creating elegant designs suited for your needs following core design theory.</p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1'>Photoshop</p>
               <p className='text-gray-800 py-1'>Illustrator</p>
               <p className='text-gray-800 py-1'>Figma</p>
@@ -73,7 +75,7 @@ export default function Home() {
               CARD IMAGE HERE
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className='py-2'>Creating elegant designs suited for your needs following core design theory.</p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1'>Photoshop</p>
               <p className='text-gray-800 py-1'>Illustrator</p>
               <p className='text-gray-800 py-1'>Figma</p>
