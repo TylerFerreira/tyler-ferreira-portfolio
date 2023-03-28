@@ -57,3 +57,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}

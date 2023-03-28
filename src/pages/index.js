@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillPhone, AiOutlineMail, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { useState } from 'react';
 import Image from 'next/image';
 import selfImage from '../images/myselfRemoved.png';
@@ -18,14 +18,16 @@ export default function Home() {
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section id='slide' className='min-h-screen'>
-          <nav className='py-10 mb-3 flex justify-between sticky top-0'>
+          <nav className='pt-10 md:pb-10 md:mb-3 flex justify-between sticky top-0'>
             <div className='flex'>
-              <a href='tel:905-515-1651' className='cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-xl text-white p-2 shadow-md dark:shadow-fuchsia-900 rounded-lg'>905-515-1651</a>
-              <a href='mailto:tyler.ferreira1@mohawkcollege.ca' className='cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-xl text-white p-2 mx-5 shadow-md dark:shadow-fuchsia-900 rounded-lg'>Tyler.ferreira1@mohawkcollege.ca</a>
+            <a href='tel:905-515-1651' className='mobile cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-4xl text-white p-2 shadow-md dark:shadow-fuchsia-900 rounded-lg'><AiFillPhone/></a>
+              <a href='mailto:tyler.ferreira1@mohawkcollege.ca' className='mobile cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-4xl text-white p-2 mx-5 shadow-md dark:shadow-fuchsia-900 rounded-lg'><AiOutlineMail/></a>
+              <a href='tel:905-515-1651' className='desktop cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-xl text-white p-2 shadow-md dark:shadow-fuchsia-900 rounded-lg'>905-515-1651</a>
+              <a href='mailto:tyler.ferreira1@mohawkcollege.ca' className='desktop cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-xl text-white p-2 mx-5 shadow-md dark:shadow-fuchsia-900 rounded-lg'>Tyler.ferreira1@mohawkcollege.ca</a>
             </div>
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='animate-bounce cursor-pointer text-2xl dark:text-white'/></li>
-              <li><a href="https://1drv.ms/b/s!ApUrob8mlp8DjUVi_b3PBuotOqeI?e=IwiDgv" target='_blank' className='text-lg bg-gradient-to-r from-fuchsia-700 to-purple-700 text-white px-4 py-2 rounded-md ml-8 shadow-lg dark:shadow-fuchsia-900'>Resume</a></li>
+              <li><a href="https://1drv.ms/b/s!ApUrob8mlp8DjUVi_b3PBuotOqeI?e=IwiDgv" target='_blank' className='text-xl bg-gradient-to-r from-fuchsia-700 to-purple-700 text-white px-4 py-2 rounded-md ml-8 shadow-lg dark:shadow-fuchsia-900'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
@@ -41,23 +43,21 @@ export default function Home() {
             <a href="https://github.com/TylerFerreira" target='_blank'><AiFillGithub/></a>
           </div>
           <div className='relative mx-auto text-center bg-gradient-to-b from-fuchsia-700 rounded-full w-80 h-80 mt-20 overflow-hidden shadow-lg dark:shadow-fuchsia-900 md:h-96 md:w-96'>
-           <Image src={selfImage} layout='fill' objectFit='cover'></Image>
+           <Image src={selfImage} layout='fill' objectFit='cover' alt='Image of myself'></Image>
           </div>
           
         </section>
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200'>
-              As a Full-Stack Developer I pride myself on being able to offer a wide range of services to my clients. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat earum soluta quis. Laudantium explicabo quos facere eius at magnam placeat minus, laboriosam accusamus, a aliquam temporibus, perspiciatis ratione vel!
+            <h3 className='text-3xl py-1 dark:text-white'>Technical Skills</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200 md:max-w-4xl'>
+              As a Software Developer, I pride myself on being able to utilize a variety of technologies. I have experience with the following languages and frameworks.
             </p>
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
-              CARD IMAGE HERE
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p className='py-2'>Creating elegant designs suited for your needs following core design theory.</p>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Front-End</h3>
               <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1'>Photoshop</p>
               <p className='text-gray-800 py-1'>Illustrator</p>
@@ -65,9 +65,7 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
-              CARD IMAGE HERE
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p className='py-2'>Creating elegant designs suited for your needs following core design theory.</p>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Back-End</h3>
               <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1'>Photoshop</p>
               <p className='text-gray-800 py-1'>Illustrator</p>
@@ -75,9 +73,7 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
-              CARD IMAGE HERE
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p className='py-2'>Creating elegant designs suited for your needs following core design theory.</p>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Miscellaneous</h3>
               <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1'>Photoshop</p>
               <p className='text-gray-800 py-1'>Illustrator</p>
@@ -89,7 +85,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200'>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200 md:max-w-4xl'>
               As a Full-Stack Developer I pride myself on being able to offer a wide range of services to my clients. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat earum soluta quis. Laudantium explicabo quos facere eius at magnam placeat minus, laboriosam accusamus, a aliquam temporibus, perspiciatis ratione vel!
             </p>
           </div>
