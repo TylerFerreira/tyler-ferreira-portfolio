@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -9,9 +10,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
+    extend:
+    {
       fontFamily: {
-        edu: 'Edu NSW ACT Foundation',
+        'edu': ['Edu NSW ACT Foundation', 'cursive']
       },
     },
   },
