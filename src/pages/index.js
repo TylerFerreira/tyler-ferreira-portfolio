@@ -20,7 +20,7 @@ import git from '../images/git.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const techImageWidth = 50;
+  const techImageWidth = 45;
   const techImageHeight = 50;
 
   return (
