@@ -46,8 +46,8 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-fuchsia-700 font-medium md:text-6xl dark:text-fuchsia-500'>TYLER FERREIRA</h2>
-            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer</h3>
+            <h2 className='text-5xl py-2 text-fuchsia-700 font-medium md:text-6xl dark:text-fuchsia-500 name'>TYLER FERREIRA</h2>
+            {darkMode ? <span className='darkTitle text-2xl md:text-3xl dark:text-white'>Software Developer</span> : <span className='lightTitle text-2xl md:text-3xl dark:text-white'>Software Developer</span>}
             <p className='text-md py-5 text-gray-800 max-w-xl mx-auto md:text-xl dark:text-slate-200'>
               Full-Stack Developer designing and developing web applications.
             </p>
