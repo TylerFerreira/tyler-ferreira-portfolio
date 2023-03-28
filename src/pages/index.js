@@ -4,9 +4,24 @@ import { AiFillPhone, AiOutlineMail, AiFillTwitterCircle, AiFillGithub, AiFillLi
 import { useState } from 'react';
 import Image from 'next/image';
 import selfImage from '../images/myselfRemoved.png';
+import csharp from '../images/csharp.png';
+import css from '../images/css.png';
+import html from '../images/html.png';
+import javascript from '../images/javascript.png';
+import reactLogo from '../images/react.png';
+import node from '../images/node.png';
+import python from '../images/python.png';
+import tailwind from '../images/tailwind.png';
+import sql from '../images/sql.png';
+import oracle from '../images/oracle.png';
+import java from '../images/java.png';
+import php from '../images/php.png';
+import git from '../images/git.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+  const techImageWidth = 50;
+  const techImageHeight = 50;
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -58,26 +73,27 @@ export default function Home() {
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Front-End</h3>
-              <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <Image src={html} width={techImageWidth} height={techImageHeight}/>
+              <Image src={css} width={techImageWidth} height={techImageHeight}/>
+              <Image src={javascript} width={techImageWidth} height={techImageHeight}/>
+              <Image src={reactLogo} width={techImageWidth} height={techImageHeight}/>
+              <Image src={tailwind} width={techImageWidth} height={techImageHeight}/>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Back-End</h3>
-              <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <Image src={php} width={techImageWidth} height={techImageHeight}/>
+              <Image src={sql} width={techImageWidth} height={techImageHeight}/>
+              <Image src={oracle} width={techImageWidth} height={techImageHeight}/>
+              <Image src={node} width={techImageWidth} height={techImageHeight}/>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Miscellaneous</h3>
-              <h4 className='py-4 text-fuchsia-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <Image src={python} width={techImageWidth} height={techImageHeight}/>
+              <Image src={java} width={techImageWidth} height={techImageHeight}/>
+              <Image src={csharp} width={techImageWidth} height={techImageHeight}/>
+              <Image src={git} width={techImageWidth} height={techImageHeight}/>
             </div>
           </div>
         </section>
