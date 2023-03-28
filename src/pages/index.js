@@ -19,10 +19,13 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-3 flex justify-between sticky top-0'>
-            <h1 className='text-xl dark:text-white font-edu'>DEVELOPED BY TYLER</h1>
+            <div className='flex'>
+              <a href='tel:905-515-1651' className='cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-xl text-white p-2 shadow-md dark:shadow-fuchsia-900 rounded-lg'>905-515-1651</a>
+              <a href='mailto:tyler.ferreira1@mohawkcollege.ca' className='cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-xl text-white p-2 mx-5 shadow-md dark:shadow-fuchsia-900 rounded-lg'>Tyler.ferreira1@mohawkcollege.ca</a>
+            </div>
             <ul className='flex items-center'>
-              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white'/></li>
-              <li><a href="#" className='bg-gradient-to-r from-fuchsia-700 to-purple-700 text-white px-4 py-2 rounded-md ml-8 shadow-lg dark:shadow-fuchsia-900'>Resume</a></li>
+              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='animate-bounce cursor-pointer text-2xl dark:text-white'/></li>
+              <li><a href="https://1drv.ms/b/s!ApUrob8mlp8DjUVi_b3PBuotOqeI?e=IwiDgv" target='_blank' className='text-lg bg-gradient-to-r from-fuchsia-700 to-purple-700 text-white px-4 py-2 rounded-md ml-8 shadow-lg dark:shadow-fuchsia-900'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
