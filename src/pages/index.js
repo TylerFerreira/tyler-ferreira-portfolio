@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
-        <section className='min-h-screen'>
+        <section id='slide' className='min-h-screen'>
           <nav className='py-10 mb-3 flex justify-between sticky top-0'>
             <div className='flex'>
               <a href='tel:905-515-1651' className='cursor-pointer bg-gradient-to-r from-fuchsia-700 to-purple-700 text-xl text-white p-2 shadow-md dark:shadow-fuchsia-900 rounded-lg'>905-515-1651</a>
