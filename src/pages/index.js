@@ -71,29 +71,35 @@ export default function Home() {
             </p>
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Front-End</h3>
-              <Image src={html} width={techImageWidth} height={techImageHeight}/>
-              <Image src={css} width={techImageWidth} height={techImageHeight}/>
-              <Image src={javascript} width={techImageWidth} height={techImageHeight}/>
-              <Image src={reactLogo} width={techImageWidth} height={techImageHeight}/>
-              <Image src={tailwind} width={techImageWidth} height={techImageHeight}/>
+            <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
+              <h3 className='text-lg font-medium pb-2'>Front-End</h3>
+              <div className='flex justify-around md:flex-1'>
+                <Image src={html} width={techImageWidth} height={techImageHeight}/>
+                <Image src={css} width={techImageWidth} height={techImageHeight}/>
+                <Image src={javascript} width={techImageWidth} height={techImageHeight}/>
+                <Image src={reactLogo} width={techImageWidth} height={techImageHeight}/>
+                <Image src={tailwind} width={techImageWidth} height={techImageHeight}/>
+              </div>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Back-End</h3>
-              <Image src={php} width={techImageWidth} height={techImageHeight}/>
-              <Image src={sql} width={techImageWidth} height={techImageHeight}/>
-              <Image src={oracle} width={techImageWidth} height={techImageHeight}/>
-              <Image src={node} width={techImageWidth} height={techImageHeight}/>
+            <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
+              <h3 className='text-lg font-medium pb-2'>Back-End</h3>
+              <div className='flex justify-around md:flex-1'>
+                <Image src={php} width={techImageWidth} height={techImageHeight}/>
+                <Image src={sql} width={techImageWidth} height={techImageHeight}/>
+                <Image src={oracle} width={techImageWidth} height={techImageHeight}/>
+                <Image src={node} width={techImageWidth} height={techImageHeight}/>
+              </div>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500'>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Miscellaneous</h3>
-              <Image src={python} width={techImageWidth} height={techImageHeight}/>
-              <Image src={java} width={techImageWidth} height={techImageHeight}/>
-              <Image src={csharp} width={techImageWidth} height={techImageHeight}/>
-              <Image src={git} width={techImageWidth} height={techImageHeight}/>
+            <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
+              <h3 className='text-lg font-medium pb-2'>Miscellaneous</h3>
+              <div className='flex justify-around md:flex-1'>
+                <Image src={python} width={techImageWidth} height={techImageHeight}/>
+                <Image src={java} width={techImageWidth} height={techImageHeight}/>
+                <Image src={csharp} width={techImageWidth} height={techImageHeight}/>
+                <Image src={git} width={techImageWidth} height={techImageHeight}/>
+              </div>
             </div>
           </div>
         </section>
