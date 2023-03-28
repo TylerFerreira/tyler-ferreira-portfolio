@@ -17,6 +17,8 @@ import oracle from '../images/oracle.png';
 import java from '../images/java.png';
 import php from '../images/php.png';
 import git from '../images/git.png';
+import portfolioProject from '../images/portfolioProject.png';
+import mbProject from '../images/mbProject.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -74,31 +76,31 @@ export default function Home() {
             <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
               <h3 className='text-lg font-medium pb-2'>Front-End</h3>
               <div className='flex justify-around md:flex-1'>
-                <Image src={html} width={techImageWidth} height={techImageHeight}/>
-                <Image src={css} width={techImageWidth} height={techImageHeight}/>
-                <Image src={javascript} width={techImageWidth} height={techImageHeight}/>
-                <Image src={reactLogo} width={techImageWidth} height={techImageHeight}/>
-                <Image src={tailwind} width={techImageWidth} height={techImageHeight}/>
+                <Image src={html} className='techImage'/>
+                <Image src={css} className='techImage'/>
+                <Image src={javascript} className='techImage'/>
+                <Image src={reactLogo} className='techImage'/>
+                <Image src={tailwind} className='techImage'/>
               </div>
             </div>
 
             <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
               <h3 className='text-lg font-medium pb-2'>Back-End</h3>
               <div className='flex justify-around md:flex-1'>
-                <Image src={php} width={techImageWidth} height={techImageHeight}/>
-                <Image src={sql} width={techImageWidth} height={techImageHeight}/>
-                <Image src={oracle} width={techImageWidth} height={techImageHeight}/>
-                <Image src={node} width={techImageWidth} height={techImageHeight}/>
+                <Image src={php} className='techImage'/>
+                <Image src={sql} className='techImage'/>
+                <Image src={oracle} className='techImage'/>
+                <Image src={node} className='techImage'/>
               </div>
             </div>
 
             <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
               <h3 className='text-lg font-medium pb-2'>Miscellaneous</h3>
               <div className='flex justify-around md:flex-1'>
-                <Image src={python} width={techImageWidth} height={techImageHeight}/>
-                <Image src={java} width={techImageWidth} height={techImageHeight}/>
-                <Image src={csharp} width={techImageWidth} height={techImageHeight}/>
-                <Image src={git} width={techImageWidth} height={techImageHeight}/>
+                <Image src={python} className='techImage'/>
+                <Image src={java} className='techImage'/>
+                <Image src={csharp} className='techImage'/>
+                <Image src={git} className='techImage'/>
               </div>
             </div>
           </div>
@@ -106,18 +108,42 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
+            <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200 md:max-w-4xl'>
               As a Full-Stack Developer I pride myself on being able to offer a wide range of services to my clients. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat earum soluta quis. Laudantium explicabo quos facere eius at magnam placeat minus, laboriosam accusamus, a aliquam temporibus, perspiciatis ratione vel!
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1 dark:text-slate-200'>IMAGE HERE</div>
-            <div className='basis-1/3 flex-1 dark:text-slate-200'>IMAGE HERE</div>
-            <div className='basis-1/3 flex-1 dark:text-slate-200'>IMAGE HERE</div>
-            <div className='basis-1/3 flex-1 dark:text-slate-200'>IMAGE HERE</div>
-            <div className='basis-1/3 flex-1 dark:text-slate-200'>IMAGE HERE</div>
-            <div className='basis-1/3 flex-1 dark:text-slate-200'>IMAGE HERE</div>
+            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white'>
+              <Image src={portfolioProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
+              <h4 className='pl-2 pt-5 text-2xl'>Web Portfolio</h4>
+              <p className='pl-2 text-slate-600'>Porfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
+              <div className='flex gap-5 pl-2 pt-5 mt-4 bottom-0'>
+              <Image src={html} className='techImage'/>
+                <Image src={css} className='techImage'/>
+                <Image src={javascript} className='techImage'/>
+                <Image src={reactLogo} className='techImage'/>
+                <Image src={tailwind} className='techImage'/>
+                <Image src={node} className='techImage'/>
+                <Image src={git} className='techImage'/>
+                
+              </div>
+            </div>
+            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white'>
+              <Image src={mbProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
+              <h4 className='pl-2 pt-5 text-2xl'>MB Property Management Portal</h4>
+              <p className='pl-2 text-slate-600'>Full-stack web application for MB Property Management that provides landlords an easy way to manage their properties and allows tenants to access their information, report issues, and send messages to their landlord. This application aims to simplify property management and improve tenant-landlord communication. <span className='italic'>(Currently In Development)</span></p>
+              <div className='flex gap-5 pl-2 pt-5'>
+                <Image src={html} className='techImage'/>
+                <Image src={css} className='techImage'/>
+                <Image src={javascript} className='techImage'/>
+                <Image src={reactLogo} className='techImage'/>
+                <Image src={node} className='techImage'/>
+                <Image src={git} className='techImage'/>
+                <Image src={php} className='techImage'/>
+                <Image src={sql} className='techImage'/>
+              </div>
+            </div>
           </div>
         </section>
       </main>
