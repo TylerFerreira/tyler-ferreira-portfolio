@@ -69,7 +69,7 @@ export default function Home() {
           <div>
             <h3 className='text-3xl mt-20 py-1 dark:text-white'>Technical Skills</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200 md:max-w-4xl'>
-              As a Full-Stack Developer, I have a strong foundation in various programming technologies and frameworks. I am proficient in Front-end technologies as well as Back-end technologies. Additionally, I have experience with Agile methodologies and version control systems such as Git. With these skills, I am capable of developing robust and scalable applications that meet the needs of clients.
+              As a Full-Stack Developer, I have a strong foundation in various programming technologies and frameworks. I am proficient in front-end technologies as well as back-end technologies. Additionally, I have experience with agile methodologies and version control systems such as Git. With these skills, I am capable of developing robust and scalable applications that meet the needs of clients.
             </p>
           </div>
           <div className='lg:flex gap-10'>

@@ -129,7 +129,7 @@ a {
   height: 50px;
 }
 
-@media screen and (min-width: 1025px)  and (max-width: 1500px) {
+@media screen and (min-width: 1025px)  and (max-width: 1250px) {
   .techImageProjects {
     width: 20px;
     height: 24px;
