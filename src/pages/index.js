@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='animate-bounce cursor-pointer text-2xl dark:text-white'/></li>
-              <li><a href="https://1drv.ms/b/s!ApUrob8mlp8DjUVi_b3PBuotOqeI?e=IwiDgv" target='_blank' className='text-xl bg-gradient-to-r from-fuchsia-700 to-purple-700 text-white px-4 py-2 rounded-md ml-8 shadow-lg dark:shadow-fuchsia-900'>Resume</a></li>
+              <li><a href="https://1drv.ms/b/s!ApUrob8mlp8DjUY4a-CwwcV4_XYg?e=nmvb9a" target='_blank' className='text-xl bg-gradient-to-r from-fuchsia-700 to-purple-700 text-white px-4 py-2 rounded-md ml-8 shadow-lg dark:shadow-fuchsia-900'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
