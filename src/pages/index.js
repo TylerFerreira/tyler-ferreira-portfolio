@@ -118,7 +118,7 @@ export default function Home() {
               <div>
                 <Image src={portfolioProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
                 <h4 className='pl-2 pt-5 text-2xl'>Web Portfolio</h4>
-                <p className='pl-2 text-slate-600'>Porfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
+                <p className='pl-2 text-slate-600'>Portfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
               </div>
               <div className='flex justify-between pt-5 projectImagesContainer'>
               <Image src={html} className='techImageProjects'/>
