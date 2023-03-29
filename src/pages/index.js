@@ -119,13 +119,13 @@ export default function Home() {
               <h4 className='pl-2 pt-5 text-2xl'>Web Portfolio</h4>
               <p className='pl-2 text-slate-600'>Porfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
               <div className='flex gap-5 pl-2 pt-5 mt-4 bottom-0'>
-              <Image src={html} className='techImage'/>
-                <Image src={css} className='techImage'/>
-                <Image src={javascript} className='techImage'/>
-                <Image src={reactLogo} className='techImage'/>
-                <Image src={tailwind} className='techImage'/>
-                <Image src={node} className='techImage'/>
-                <Image src={git} className='techImage'/>
+              <Image src={html} className='techImageProjects'/>
+                <Image src={css} className='techImageProjects'/>
+                <Image src={javascript} className='techImageProjects'/>
+                <Image src={reactLogo} className='techImageProjects'/>
+                <Image src={tailwind} className='techImageProjects'/>
+                <Image src={node} className='techImageProjects'/>
+                <Image src={git} className='techImageProjects'/>
                 
               </div>
             </div>
@@ -134,14 +134,14 @@ export default function Home() {
               <h4 className='pl-2 pt-5 text-2xl'>MB Property Management Portal</h4>
               <p className='pl-2 text-slate-600'>Full-stack web application for MB Property Management that provides landlords an easy way to manage their properties and allows tenants to access their information, report issues, and send messages to their landlord. This application aims to simplify property management and improve tenant-landlord communication. <span className='italic'>(Currently In Development)</span></p>
               <div className='flex gap-5 pl-2 pt-5'>
-                <Image src={html} className='techImage'/>
-                <Image src={css} className='techImage'/>
-                <Image src={javascript} className='techImage'/>
-                <Image src={reactLogo} className='techImage'/>
-                <Image src={node} className='techImage'/>
-                <Image src={git} className='techImage'/>
-                <Image src={php} className='techImage'/>
-                <Image src={sql} className='techImage'/>
+                <Image src={html} className='techImageProjects'/>
+                <Image src={css} className='techImageProjects'/>
+                <Image src={javascript} className='techImageProjects'/>
+                <Image src={reactLogo} className='techImageProjects'/>
+                <Image src={node} className='techImageProjects'/>
+                <Image src={git} className='techImageProjects'/>
+                <Image src={php} className='techImageProjects'/>
+                <Image src={sql} className='techImageProjects'/>
               </div>
             </div>
           </div>
