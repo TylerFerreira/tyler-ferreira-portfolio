@@ -118,7 +118,7 @@ export default function Home() {
               <Image src={portfolioProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
               <h4 className='pl-2 pt-5 text-2xl'>Web Portfolio</h4>
               <p className='pl-2 text-slate-600'>Porfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
-              <div className='flex gap-5 pl-2 pt-5 mt-4 bottom-0'>
+              <div className='flex justify-around pt-5 projectImagesContainer'>
               <Image src={html} className='techImageProjects'/>
                 <Image src={css} className='techImageProjects'/>
                 <Image src={javascript} className='techImageProjects'/>
@@ -129,11 +129,11 @@ export default function Home() {
                 
               </div>
             </div>
-            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white'>
+            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white relative'>
               <Image src={mbProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
               <h4 className='pl-2 pt-5 text-2xl'>MB Property Management Portal</h4>
               <p className='pl-2 text-slate-600'>Full-stack web application for MB Property Management that provides landlords an easy way to manage their properties and allows tenants to access their information, report issues, and send messages to their landlord. This application aims to simplify property management and improve tenant-landlord communication. <span className='italic'>(Currently In Development)</span></p>
-              <div className='flex gap-5 pl-2 pt-5'>
+              <div className='flex justify-around pt-5 sticky bottom-0'>
                 <Image src={html} className='techImageProjects'/>
                 <Image src={css} className='techImageProjects'/>
                 <Image src={javascript} className='techImageProjects'/>
