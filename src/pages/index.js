@@ -67,9 +67,9 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Technical Skills</h3>
+            <h3 className='text-3xl mt-20 py-1 dark:text-white'>Technical Skills</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200 md:max-w-4xl'>
-              As a Software Developer, I pride myself on being able to utilize a variety of technologies. I have experience with the following languages and frameworks.
+              As a Full-Stack Developer, I have a strong foundation in various programming technologies and frameworks. I am proficient in Front-end technologies as well as Back-end technologies. Additionally, I have experience with Agile methodologies and version control systems such as Git. With these skills, I am capable of developing robust and scalable applications that meet the needs of clients.
             </p>
           </div>
           <div className='lg:flex gap-10'>
@@ -108,17 +108,19 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
+            <h3 className='text-3xl mt-20 py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-slate-200 md:max-w-4xl'>
-              As a Full-Stack Developer I pride myself on being able to offer a wide range of services to my clients. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat earum soluta quis. Laudantium explicabo quos facere eius at magnam placeat minus, laboriosam accusamus, a aliquam temporibus, perspiciatis ratione vel!
+              I have worked on a few projects that have allowed me to demonstrate my technical skills and creative problem-solving abilities. Each project presented a unique challenge that required me to develop innovative solutions and collaborate with team members to deliver high-quality results. These projects have given me the opportunity to work with a range of technologies and programming languages, including front-end and back-end development, database design, and version control. Through these experiences, I have gained valuable insight into the software development lifecycle and how to build effective solutions that meet the needs of clients.
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white'>
-              <Image src={portfolioProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
-              <h4 className='pl-2 pt-5 text-2xl'>Web Portfolio</h4>
-              <p className='pl-2 text-slate-600'>Porfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
-              <div className='flex justify-around pt-5 projectImagesContainer'>
+            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white flex flex-col justify-between'>
+              <div>
+                <Image src={portfolioProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
+                <h4 className='pl-2 pt-5 text-2xl'>Web Portfolio</h4>
+                <p className='pl-2 text-slate-600'>Porfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
+              </div>
+              <div className='flex justify-between pt-5 projectImagesContainer'>
               <Image src={html} className='techImageProjects'/>
                 <Image src={css} className='techImageProjects'/>
                 <Image src={javascript} className='techImageProjects'/>
@@ -129,11 +131,13 @@ export default function Home() {
                 
               </div>
             </div>
-            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white relative'>
-              <Image src={mbProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
-              <h4 className='pl-2 pt-5 text-2xl'>MB Property Management Portal</h4>
-              <p className='pl-2 text-slate-600'>Full-stack web application for MB Property Management that provides landlords an easy way to manage their properties and allows tenants to access their information, report issues, and send messages to their landlord. This application aims to simplify property management and improve tenant-landlord communication. <span className='italic'>(Currently In Development)</span></p>
-              <div className='flex justify-around pt-5 sticky bottom-0'>
+            <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white flex flex-col justify-between'>
+              <div>
+                <Image src={mbProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
+                <h4 className='pl-2 pt-5 text-2xl'>MB Property Management Portal</h4>
+                <p className='pl-2 text-slate-600'>Full-stack web application for MB Property Management that provides landlords an easy way to manage their properties and allows tenants to access their information, report issues, and send messages to their landlord. This application aims to simplify property management and improve tenant-landlord communication. <span className='italic'>(Currently In Development)</span></p>
+              </div>
+              <div className='flex justify-between pt-5 sticky'>
                 <Image src={html} className='techImageProjects'/>
                 <Image src={css} className='techImageProjects'/>
                 <Image src={javascript} className='techImageProjects'/>
