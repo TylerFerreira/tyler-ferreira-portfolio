@@ -59,7 +59,7 @@ export default function Home() {
             <a href="https://github.com/TylerFerreira" target='_blank'><AiFillGithub/></a>
           </div>
           <div className='relative mx-auto text-center bg-gradient-to-b from-fuchsia-700 rounded-full w-80 h-80 mt-20 overflow-hidden shadow-lg dark:shadow-fuchsia-900 md:h-96 md:w-96'>
-           <Image src={selfImage} layout='fill' objectFit='cover' alt='Image of myself'></Image>
+           <Image src={selfImage} layout='fill' objectFit='cover' alt='Image of myself' priority></Image>
           </div>
           
         </section>
@@ -75,31 +75,31 @@ export default function Home() {
             <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
               <h3 className='text-lg font-medium pb-2'>Front-End</h3>
               <div className='flex justify-around md:flex-1'>
-                <Image src={html} className='techImage'/>
-                <Image src={css} className='techImage'/>
-                <Image src={javascript} className='techImage'/>
-                <Image src={reactLogo} className='techImage'/>
-                <Image src={tailwind} className='techImage'/>
+                <Image src={html} className='techImage' alt='technology logo'/>
+                <Image src={css} className='techImage' alt='technology logo'/>
+                <Image src={javascript} className='techImage' alt='technology logo'/>
+                <Image src={reactLogo} className='techImage' alt='technology logo'/>
+                <Image src={tailwind} className='techImage' alt='technology logo'/>
               </div>
             </div>
 
             <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
               <h3 className='text-lg font-medium pb-2'>Back-End</h3>
               <div className='flex justify-around md:flex-1'>
-                <Image src={php} className='techImage'/>
-                <Image src={sql} className='techImage'/>
-                <Image src={oracle} className='techImage'/>
-                <Image src={node} className='techImage'/>
+                <Image src={php} className='techImage' alt='technology logo'/>
+                <Image src={sql} className='techImage' alt='technology logo'/>
+                <Image src={oracle} className='techImage' alt='technology logo'/>
+                <Image src={node} className='techImage' alt='technology logo'/>
               </div>
             </div>
 
             <div className='text-center shadow-lg py-10 rounded-xl my-10 dark:bg-white dark:shadow-slate-500 lg:w-1/3'>
               <h3 className='text-lg font-medium pb-2'>Miscellaneous</h3>
               <div className='flex justify-around md:flex-1'>
-                <Image src={python} className='techImage'/>
-                <Image src={java} className='techImage'/>
-                <Image src={csharp} className='techImage'/>
-                <Image src={git} className='techImage'/>
+                <Image src={python} className='techImage' alt='technology logo'/>
+                <Image src={java} className='techImage' alt='technology logo'/>
+                <Image src={csharp} className='techImage' alt='technology logo'/>
+                <Image src={git} className='techImage' alt='technology logo'/>
               </div>
             </div>
           </div>
@@ -115,36 +115,36 @@ export default function Home() {
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white flex flex-col justify-between'>
               <div>
-                <Image src={portfolioProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
+                <Image src={portfolioProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400' alt='web portfolio screenshot'/>
                 <h4 className='pl-2 pt-5 text-2xl'>Web Portfolio</h4>
                 <p className='pl-2 text-slate-600'>Portfolio website created using multiple front end technologies and frameworks. Hosted and deployed online with Vercel. Incorporates all professional design standards, created with mobile friendly responsive design.</p>
               </div>
               <div className='flex justify-between pt-5 projectImagesContainer'>
-              <Image src={html} className='techImageProjects'/>
-                <Image src={css} className='techImageProjects'/>
-                <Image src={javascript} className='techImageProjects'/>
-                <Image src={reactLogo} className='techImageProjects'/>
-                <Image src={tailwind} className='techImageProjects'/>
-                <Image src={node} className='techImageProjects'/>
-                <Image src={git} className='techImageProjects'/>
+              <Image src={html} className='techImageProjects' alt='technology logo'/>
+                <Image src={css} className='techImageProjects' alt='technology logo'/>
+                <Image src={javascript} className='techImageProjects' alt='technology logo'/>
+                <Image src={reactLogo} className='techImageProjects' alt='technology logo'/>
+                <Image src={tailwind} className='techImageProjects' alt='technology logo'/>
+                <Image src={node} className='techImageProjects' alt='technology logo'/>
+                <Image src={git} className='techImageProjects' alt='technology logo'/>
                 
               </div>
             </div>
             <div className='basis-1/3 flex-1 rounded-xl p-4 shadow-lg dark:shadow-slate-500 dark:bg-white flex flex-col justify-between'>
               <div>
-                <Image src={mbProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400'/>
+                <Image src={mbProject} className='rounded-3xl shadow-2xl dark:shadow-slate-400' alt='mb website screenshot'/>
                 <h4 className='pl-2 pt-5 text-2xl'>MB Property Management Portal</h4>
                 <p className='pl-2 text-slate-600'>Full-stack web application for MB Property Management that provides landlords an easy way to manage their properties and allows tenants to access their information, report issues, and send messages to their landlord. This application aims to simplify property management and improve tenant-landlord communication. <span className='italic'>(Currently In Development)</span></p>
               </div>
               <div className='flex justify-between pt-5 sticky'>
-                <Image src={html} className='techImageProjects'/>
-                <Image src={css} className='techImageProjects'/>
-                <Image src={javascript} className='techImageProjects'/>
-                <Image src={reactLogo} className='techImageProjects'/>
-                <Image src={node} className='techImageProjects'/>
-                <Image src={git} className='techImageProjects'/>
-                <Image src={php} className='techImageProjects'/>
-                <Image src={sql} className='techImageProjects'/>
+                <Image src={html} className='techImageProjects' alt='technology logo'/>
+                <Image src={css} className='techImageProjects' alt='technology logo'/>
+                <Image src={javascript} className='techImageProjects' alt='technology logo'/>
+                <Image src={reactLogo} className='techImageProjects' alt='technology logo'/>
+                <Image src={node} className='techImageProjects' alt='technology logo'/>
+                <Image src={git} className='techImageProjects' alt='technology logo'/>
+                <Image src={php} className='techImageProjects' alt='technology logo'/>
+                <Image src={sql} className='techImageProjects' alt='technology logo'/>
               </div>
             </div>
           </div>
