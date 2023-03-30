@@ -22,8 +22,6 @@ import mbProject from '../images/mbProject.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const techImageWidth = 45;
-  const techImageHeight = 50;
 
   return (
     <div className={darkMode ? 'dark' : ''}>
